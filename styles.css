@@ -1,0 +1,236 @@
+/* style.css */
+
+html {
+    background-color: #020659;
+    color: white;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+    width: 100%;
+    max-width: 1200px;
+    background-color: #040a89;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    gap: 1em;
+    list-style-type: none;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    padding: 0.5em 1em;
+}
+
+ul li:first-child {
+    font-variant: small-caps;
+    font-size: 1.2em;
+    background-color: #040a89;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+}
+
+main {
+    padding: 1em;
+    max-width: 1000px;
+    width: 100%;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+section {
+    margin-bottom: 2em;
+}
+
+.trending-songs {
+    display: flex;
+    overflow-x: auto;
+    gap: 1em;
+    padding-bottom: 1em;
+    scroll-snap-type: x mandatory;
+}
+
+.trending-songs article {
+    flex: 0 0 auto;
+    width: 300px;
+    height: auto;
+    background-color: white;
+    scroll-snap-align: start;
+    border-radius: 10px;
+    padding: 1em;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.trending-songs img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+trending-songs audio {
+    width: 90%;
+    margin-top: 0.5em;
+    border-radius: 10px;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: #040a89;
+    color: white;
+    width: 100%;
+}
+
+.playlists {
+    display: flex;
+    justify-content: space-between;
+    gap: 2em;
+    margin-top: 2em;
+}
+
+.playlists .yourplaylist,
+.playlists .curatedplaylist {
+    flex: 1;
+    padding: 1em;
+    border-radius: 10px;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+.playlists .yourplaylist {
+    background-color: #0D8DFB; /* Change this color to your desired background color */
+}
+
+.playlists .curatedplaylist {
+    background-color: #030ABC; /* Change this color to your desired background color */
+}
+
+.playlists .yourplaylist h2,
+.playlists .curatedplaylist h2 {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    color: white;
+}
+
+.playlists .yourplaylist article {
+    background-color: #2699fb; /* Your Playlist article background color */
+    border-radius: 10px;
+    padding: 1em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.playlists .curatedplaylist article {
+    background-color: #2104D9; /* Curated Playlist article background color */
+    border-radius: 10px;
+    padding: 1em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+
+.playlists article img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.playlists article h3 {
+    margin-top: 0.5em;
+    color: white;
+}
+
+.playlists article p {
+    color: white;
+}
+
+
+.more-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1em;
+}
+
+.more-buttons button {
+    background-color: #800020;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.trending-songs .song-title {
+    font-weight: bold;
+    font-size: 1em;
+    margin: 0.5em 0 0 0;
+    text-align: left;
+    width: 100%;
+}
+
+.trending-songs .song-artist {
+    font-size: 0.9em;
+    color: gray;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+}
+
+.trending-songs .more-trending {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.trending-songs .more-trending button {
+    background-color: #800020;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 10px;
+    cursor: pointer;
+}
